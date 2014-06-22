@@ -1,0 +1,90 @@
+html,body { height: 100%;}
+body {
+	margin: 0px;
+	background-color: white;
+
+}
+
+#main {
+	height: 660px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 750px;
+	background-color: #ffcc99;
+}
+
+#top {
+	height: 130px;
+}	
+
+#title{
+	font-family: nixie one;
+	padding-top: 35px;
+	padding-left: 25px;
+	color: #fffaf0;
+	font-size: 32pt;
+	text-shadow: 0px -1px 1px #999999;
+}
+
+#menu{
+	padding-left: 350px;
+}
+
+.menu-item{
+	width: 100px;
+	padding: 1px 3px 15px 3px;
+	font-family: gloria hallelujah;	
+	font-size: 14pt;
+	color: #fffaf0;
+	text-align: center;	
+	
+	position: relative;
+	top: 5px;
+	z-index: 3;
+
+	border-radius: 7px 20px 0px 0px / 7px 15px 0px 0px;
+	float: left;
+
+	margin-right: 8px;
+}
+
+#menu-calendar{
+	background-color: #FF99FF;
+	padding: 1px 3px 15px 3px;
+}
+
+#menu-records{
+	background-color: #99ffff;
+	padding: 1px 3px 2px 3px;
+}
+
+#menu-setting{
+	padding: 1px 3px 2px 3px;
+	background-color: #99ff66;
+}
+
+#content {
+	height: 520px;
+	margin-right: 10px;
+	margin-left: 10px;
+	background-color: white;
+
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%);
+	box-shadow: -1px 1px 1px rgba(0,0,0,0.3);
+
+	z-index: 1;
+}
+
+.triangle {
+	width: 0px;
+	height: 0px;
+	border-bottom: 30px solid white;
+	border-right: 30px solid #ffcc99;
+}
+
+.foldtr {
+	position: relative;
+  	box-shadow: -2px 2px 2px rgba(0,0,0,0.3);
+  	width: 30px;
+  	margin-left: auto;
+}
