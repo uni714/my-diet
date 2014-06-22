@@ -32,15 +32,14 @@ body {
 
 .menu-item{
 	width: 100px;
-	padding: 1px 3px 15px 3px;
-	font-family: gloria hallelujah;	
-	font-size: 14pt;
+	font-family: give you glory;	
+	font-size: 16pt;
 	color: #fffaf0;
-	text-shadow: 1px 1px 1px #999999;
+	text-shadow: 1px 1px #999999;
 	text-align: center;	
 	
 	position: relative;
-	top: 5px;
+	top: 6px;
 	z-index: 3;
 
 	border-radius: 7px 20px 0px 0px / 7px 15px 0px 0px;
@@ -51,16 +50,16 @@ body {
 
 #menu-calendar{
 	background-color: #FF99FF;
-	padding: 1px 3px 15px 3px;
+	padding: 5px 3px 17px 3px;
 }
 
 #menu-records{
 	background-color: #99ffff;
-	padding: 1px 3px 2px 3px;
+	padding: 5px 3px 1px 3px;
 }
 
 #menu-setting{
-	padding: 1px 3px 2px 3px;
+	padding: 5px 3px 1px 3px;
 	background-color: #99ff66;
 }
 
