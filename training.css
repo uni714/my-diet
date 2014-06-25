@@ -1,4 +1,6 @@
 html,body { height: 100%;}
+
+
 body {
 	margin: 0px;
 	background-color: white;
@@ -6,7 +8,8 @@ body {
 }
 
 #main {
-	height: 660px;
+	min-height: 100%;
+	height: auto;
 	margin-right: auto;
 	margin-left: auto;
 	width: 750px;
@@ -64,7 +67,7 @@ body {
 }
 
 #content {
-	height: 520px;
+	height: 100%;
 	margin-right: 10px;
 	margin-left: 10px;
 	background-color: white;
@@ -87,4 +90,19 @@ body {
   	box-shadow: -2px 2px 2px rgba(0,0,0,0.3);
   	width: 30px;
   	margin-left: auto;
+}
+
+#month {
+	font-family: nixie one;
+	padding-top: 15px;
+	padding-left: 50px;
+	font-size: 20pt;
+	color: #999;
+}
+
+#calendar {
+	margin-left: 15px;
+	height: 500px;
+	width: 700px;
+	border: 1px #999 solid;
 }
