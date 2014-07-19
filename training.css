@@ -8,8 +8,8 @@ body {
 }
 
 #main {
-	min-height: 100%;
-	height: auto;
+	padding-bottom: 10px;
+	height: 100%;
 	margin-right: auto;
 	margin-left: auto;
 	width: 750px;
@@ -17,12 +17,12 @@ body {
 }
 
 #top {
-	height: 130px;
+	height: 120px;
 }	
 
 #title{
 	font-family: nixie one;
-	padding-top: 35px;
+	padding-top: 25px;
 	padding-left: 25px;
 	color: #fffaf0;
 	font-size: 32pt;
@@ -70,6 +70,7 @@ body {
 	height: 100%;
 	margin-right: 10px;
 	margin-left: 10px;
+	padding-bottom: 10px;
 	background-color: white;
 
 	background: -webkit-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%);
@@ -101,8 +102,9 @@ body {
 }
 
 #calendar {
-	margin-left: 15px;
-	height: 500px;
+	box-sizing; borde-box;
+	margin: auto;
+	height: 300px;
 	width: 700px;
 	border: 1px #999 solid;
 }
