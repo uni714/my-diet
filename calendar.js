@@ -18,6 +18,48 @@ var Calendar = (function(){
 		return (m < 9)?("0"+(m+1)):(""+(m+1));
 	};
 
+	// Get Days in a month
+	Calendar.getDaysInMonth = function(y, m){
+		var days = [31,28,31,30,31,30,31,31,30,31,30,31];
+		return ((y%4 == 0) && (m == 1))?29:(days[m]);
+	};
+
+	// Update Day Cells
+	Calendar.updateDayCells = function(){
+		var t = this,
+		fix_first_day = (t.first_day+6)%7,
+		current_day = 0,
+		days = t.getDaysInMonth(t.year, t.month),
+		tbody = t.calendar.find('tbody');
+		end_flag = false,
+		start_flag = false,
+		tr = null,
+		td = null;
+		while(!end_flag){
+			tr = $('<tr />');
+			tbody.append(tr);
+			for (var i = 0; i < 7; i++){
+				if ((!start_flag) && (fix_first_day == i)) {
+					start_flag = true;
+				}
+				if (start_flag){
+					current_day++;
+					if (current_day <= days){
+						td = $('<td>'+current_day+'</td>');
+						tr.append(td);
+						if (i == 5) td.addClass('sat');
+						if (i == 6) td.addClass('sun');
+					} else {
+						end_flag = true;
+						tr.append('<td />');
+					}
+				} else {
+					tr.append('<td />');
+				}
+			}
+		}
+	};
+
 	// Update Date String
 	Calendar.updateDateString = function(){
 		var t = this;
@@ -34,6 +76,7 @@ var Calendar = (function(){
 		t.date = d;
 		t.first_day = t.getFirstDay(y, m);
 		t.updateDateString();
+		t.updateDayCells();
 		return t;
 	};
 
