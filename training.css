@@ -9,7 +9,8 @@ body {
 
 #main {
 	padding-bottom: 10px;
-	height: 100%;
+	min-height: 100%;
+	height: auto;
 	margin-right: auto;
 	margin-left: auto;
 	width: 750px;
@@ -67,7 +68,7 @@ body {
 }
 
 #content {
-	height: 100%;
+	height: auto;
 	margin-right: 10px;
 	margin-left: 10px;
 	padding-bottom: 10px;
@@ -102,9 +103,44 @@ body {
 }
 
 #calendar {
-	box-sizing; borde-box;
+	font-size: 9pt;
+	table-layout: fixed;
+	padding: 10px;
 	margin: auto;
-	height: 300px;
+	height: 395px;
 	width: 700px;
 	border: 1px #999 solid;
+}
+
+#weekname td {
+	padding-top: 3px;
+	padding-bottom: 10px;
+	text-align: center;
+	vertical-align: center;
+}
+
+#calendar tbody td {
+	text-align: left;
+	vertical-align: top;
+}
+
+#calendar tbody tr td {
+	border-left:1px black solid;
+	border-top:1px black solid;
+}
+
+#calendar tbody tr td:first-child {
+	border-left: none;
+}
+
+#calendar tbody tr:first-child td{
+	border-top: none;
+}
+
+#calendar td.sat {
+	color: blue;
+}
+
+#calendar td.sun {
+	color: red;	
 }
